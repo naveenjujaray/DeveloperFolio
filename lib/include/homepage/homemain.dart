@@ -1,8 +1,10 @@
+import 'package:DeveloperFolio/include/Rows/blogcardmain.dart';
 import 'package:DeveloperFolio/include/imagesmain/images.dart';
 import 'package:DeveloperFolio/include/skillspage/skills_desk.dart';
 import 'package:DeveloperFolio/include/Rows/progressbarmain.dart';
 import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
 import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
+import 'package:DeveloperFolio/pages/blogpage.dart';
 import 'package:DeveloperFolio/pages/progresspage.dart';
 import 'package:DeveloperFolio/pages/welcome.dart';
 import 'package:flutter/material.dart';
@@ -61,10 +63,12 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   Expanded(child: ThreeDesk()),
                 ],
               ),
-              SizedBox(
-                height: 35,
-              ),
               Row(
+                children: [
+                  BlogPage(),
+                ],
+              ),
+               Row(
                 children: [],
               ),
             ],
@@ -87,6 +91,7 @@ class HomeMobile extends StatelessWidget {
           OneMob(),
           SkillsMob(),
           ProgressPage(),
+          BlogPage(),
         ],
       ),
     );
@@ -105,6 +110,7 @@ class HomeTab extends StatelessWidget {
           OneTab(),
           SkillsTab(),
           ProgressPage(),
+          BlogPage(),
         ],
       ),
     );

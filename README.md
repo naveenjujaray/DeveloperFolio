@@ -5,9 +5,14 @@ A clean, beautiful and responsive portfolio template for Developers!
 `Still in development stage.` 
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an pull request.
 
+### Desktop View
 ![Desktop](/gif/desk.gif)
 
-![Tablet](/gif/tab.gif) ![Mobile](/gif/mob.gif)
+### Tablet View
+![Tablet](/gif/tab.gif)
+
+### Mobile View
+![Mobile](/gif/mob.gif)
 
 ## Sections
 

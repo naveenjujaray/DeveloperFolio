@@ -1,4 +1,4 @@
-# DeveloperFolio
+# DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml)
 
 A clean, beautiful and responsive portfolio template for Developers!
 

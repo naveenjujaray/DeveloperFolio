@@ -1,4 +1,4 @@
-# DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Stars](https://img.shields.io/github/stars/naveenjujaray/DeveloperFolio?style=plastic) ![Forks](https://img.shields.io/github/forks/naveenjujaray/DeveloperFolio?style=plastic)
 
 A clean, beautiful and responsive portfolio template for Developers!
 

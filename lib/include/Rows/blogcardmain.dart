@@ -194,15 +194,17 @@ class BlogCardMob extends StatelessWidget {
             ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-              SizedBox(height: 10,),
-              Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
-              style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-               ),
-                       ],
-        ),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(child: Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
+                SizedBox(height: 10,),
+                Expanded(
+                      child: Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+        style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+         ),
+                ),
+               ],
+          ),
             ),
           ),
           SizedBox(height: 30,),
@@ -223,15 +225,17 @@ class BlogCardMob extends StatelessWidget {
             ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-              SizedBox(height: 10,),
-              Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
-              style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-               ),
-                       ],
-        ),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(child: Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
+                SizedBox(height: 10,),
+                Expanded(
+                      child: Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
+        style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+         ),
+                ),
+               ],
+          ),
             ),
           ),
            ],

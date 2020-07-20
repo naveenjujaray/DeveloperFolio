@@ -65,7 +65,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
               ),
               Row(
                 children: [
-                  BlogPage(),
+                  Expanded(child: BlogPage()),
                 ],
               ),
                Row(

@@ -1,6 +1,4 @@
-
 import 'package:DeveloperFolio/configure/centeredview.dart';
-import 'package:DeveloperFolio/configure/centeredviewmob.dart';
 import 'package:DeveloperFolio/include/homepage/homemain.dart';
 import 'package:DeveloperFolio/include/navbar/drawer/drawernav.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +20,7 @@ class HomePage extends StatelessWidget {
                child: ScreenTypeLayout(
          mobile: CenteredViewMob(child: HomeMobile()),
          desktop: CenteredView(child: HomeDesktop()),
-         tablet: CenteredView(child: HomeTab()),
+         tablet: CenteredViewTab(child: HomeTab()),
                ),
         ),
             ],

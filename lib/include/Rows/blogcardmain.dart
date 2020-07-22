@@ -14,67 +14,99 @@ class BlogCardDesk extends StatelessWidget {
           Text('WITH LOVE FOR DEVELOPING COOL STUFF, I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNT.',
           style: TextStyle(color: Colors.grey, fontSize: 22),),
           SizedBox(height: 25,),
-         Row(
-           children: [
-             SizedBox(width: 25,),
-              InkWell(
-              onTap: () {
-                js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
-                 },
-               child: Container(
+         SingleChildScrollView(
+           scrollDirection: Axis.horizontal,
+                    child: Row(
+             children: [
+               SizedBox(width: 25,),
+                InkWell(
+                onTap: () {
+                  js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                   },
+                 child: Container(
+                  width: 450.0,
+                  height: 200.0,
+                  padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                  decoration: new BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.white,
+              boxShadow: [new BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 10.0,
+              ),]
+        ),
+        child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                  Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                  SizedBox(height: 10,),
+                  Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+                  style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                   ),
+                       ],
+        ),
+              ),
+            ),
+            SizedBox(width: 30,),
+            InkWell(
+                  onTap: () {
+                         js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                         },
+                        child: Container(
                 width: 450.0,
                 height: 200.0,
                 padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                 decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.white,
+              boxShadow: [new BoxShadow(
                 color: Colors.black.withOpacity(0.1),
                 blurRadius: 10.0,
-            ),]
+              ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-                Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
                 SizedBox(height: 10,),
-                Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+                Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
                 style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
                  ),
-                     ],
+                         ],
         ),
+              ),
             ),
-          ),
-          SizedBox(width: 30,),
-          InkWell(
-                onTap: () {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
-                       },
-                      child: Container(
-              width: 450.0,
-              height: 200.0,
-              padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-              decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10.0,
-            ),]
+            SizedBox(width: 30,),
+             InkWell(
+                    onTap: () {
+                           js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                           },
+                          child: Container(
+                  width: 450.0,
+                  height: 200.0,
+                  padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                  decoration: new BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+                boxShadow: [new BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 10.0,
+                ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-              SizedBox(height: 10,),
-              Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
-              style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-               ),
-                       ],
-        ),
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('What is Flutter Web?', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                    SizedBox(height: 10,),
+                    Text("In addition to mobile apps, Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript.", 
+                        style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                         ),
+                   ],
             ),
-          ),
-           ],
+                ),
+            ),
+             ],
+           ),
          ),
          SizedBox(height: 30,),
         ],
@@ -87,6 +119,7 @@ class BlogCardTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 600,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -95,68 +128,102 @@ class BlogCardTab extends StatelessWidget {
           Text('WITH LOVE FOR DEVELOPING COOL STUFF, I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNT.',
           style: TextStyle(color: Colors.grey, fontSize: 22),),
           SizedBox(height: 25,),
-         Column(
-           children: [
-              InkWell(
-                onTap: () {
-                       js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
-                       },
-                      child: Container(
-              width: 600.0,
-              height: 200.0,
-              padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-              decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10.0,
-            ),]
+         SingleChildScrollView(
+           scrollDirection: Axis.vertical,
+                    child: Center(
+                                          child: Column(
+             children: [
+                InkWell(
+                  onTap: () {
+                           js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                           },
+                          child: Container(
+                width: 580.0,
+                height: 200.0,
+                padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                decoration: new BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.white,
+              boxShadow: [new BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                blurRadius: 20.0,
+              ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-              SizedBox(height: 10,),
-              Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
-              style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-               ),
-                       ],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                SizedBox(height: 10,),
+                Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+                style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                 ),
+                           ],
         ),
+              ),
             ),
-          ),
-          SizedBox(height: 30,),
-          InkWell(
-                onTap: () {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
-                       },
-                      child: Container(
-              width: 600,
-              height: 200.0,
-              padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-              decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10.0,
-            ),]
+            SizedBox(height: 30,),
+            InkWell(
+                  onTap: () {
+                           js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                           },
+                          child: Container(
+                width: 580,
+                height: 200.0,
+                padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                decoration: new BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              color: Colors.white,
+              boxShadow: [new BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                blurRadius: 20.0,
+              ),]
         ),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
-              SizedBox(height: 10,),
-              Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
-              style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-               ),
-                       ],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                SizedBox(height: 10,),
+                Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
+                style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                 ),
+                           ],
         ),
+              ),
             ),
-          ),
-           ],
+            SizedBox(height: 30,),
+             InkWell(
+                        onTap: () {
+                               js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                               },
+                              child: Container(
+                      width: 580.0,
+                      height: 200.0,
+                      padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                      decoration: new BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  color: Colors.white,
+                  boxShadow: [new BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 20.0,
+                  ),]
+        ),
+        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('What is Flutter Web?', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                        SizedBox(height: 10,),
+                        Text("In addition to mobile apps, Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript.", 
+                            style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                             ),
+                       ],
+              ),
+                  ),
+              ),
+              SizedBox(height: 30,),
+             ],
+           ),
+                    ),
          ),
-         SizedBox(height: 30,),
         ],
       ),
     );
@@ -167,6 +234,7 @@ class BlogCardMob extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 600,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -175,72 +243,106 @@ class BlogCardMob extends StatelessWidget {
           Text('WITH LOVE FOR DEVELOPING COOL STUFF, I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNT.',
           style: TextStyle(color: Colors.grey, fontSize: 18),),
            SizedBox(height: 25,),
-         Column(
-           children: [
+         SingleChildScrollView(
+           scrollDirection: Axis.vertical,
+                    child: Center(
+                      child: Column(
+               children: [
+                  InkWell(
+                    onTap: () {
+                           js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                           },
+                          child: Container(
+                  width: 400.0,
+                  height: 200.0,
+                  padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                  decoration: new BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+                boxShadow: [new BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 20.0,
+                ),]
+        ),
+        child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
+                    SizedBox(height: 10,),
+                    Expanded(
+                          child: Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+        style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+             ),
+                    ),
+                   ],
+              ),
+                ),
+              ),
+              SizedBox(height: 30,),
               InkWell(
-                onTap: () {
-                       js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
-                       },
-                      child: Container(
-              width: 600.0,
-              height: 200.0,
-              padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-              decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10.0,
-            ),]
+                    onTap: () {
+                           js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                           },
+                          child: Container(
+                  width: 400,
+                  height: 200.0,
+                  padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                  decoration: new BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+                boxShadow: [new BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 20.0,
+                ),]
         ),
         child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(child: Text('Walls — Ad Free Wallpapers a Flutter App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
-                SizedBox(height: 10,),
-                Expanded(
-                      child: Text("I’m a noob to Android Development but Flutter made Android Development simple in a way that i had completed this app with no skills in span of 14 Days, if you’re interested in Flutter then you should check what i made.", 
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
+                    SizedBox(height: 10,),
+                    Expanded(
+                          child: Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
         style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-         ),
+             ),
+                    ),
+                   ],
+              ),
                 ),
-               ],
-          ),
-            ),
-          ),
-          SizedBox(height: 30,),
-          InkWell(
-                onTap: () {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
-                       },
-                      child: Container(
-              width: 600,
-              height: 200.0,
-              padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
-              decoration: new BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.white,
-            boxShadow: [new BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10.0,
-            ),]
+              ),
+              SizedBox(height: 30,),
+              InkWell(
+                            onTap: () {
+                                   js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                                   },
+                                  child: Container(
+                          width: 400.0,
+                          height: 200.0,
+                          padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
+                          decoration: new BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.white,
+                      boxShadow: [new BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 20.0,
+                      ),]
         ),
         child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(child: Text('Build A Blog Using Jekyll And Deploy To Github Pages And Set Custom Domain', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),)),
-                SizedBox(height: 10,),
-                Expanded(
-                      child: Text("I recently decided to start a blog. I had used Wordpress in the past, so I knew I could get my blog up and running quickly using Wordpress. I was also slightly familiar with Jekyll.", 
-        style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
-         ),
-                ),
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('What is Flutter Web?', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),),
+                            SizedBox(height: 10,),
+                            Text("In addition to mobile apps, Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript.", 
+                                style: GoogleFonts.montserrat(textStyle: TextStyle(fontSize: 16, fontStyle: FontStyle.italic,),)
+                                 ),
+                           ],
+                  ),
+                      ),
+                  ),
+                  SizedBox(height: 30,),
                ],
-          ),
-            ),
-          ),
-           ],
+             ),
+           ),
          ),
-         SizedBox(height: 30,),
         ],
       ),
     );

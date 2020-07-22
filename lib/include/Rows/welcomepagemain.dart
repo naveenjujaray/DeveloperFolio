@@ -404,29 +404,36 @@ class WelcomePageMob extends StatelessWidget {
             SizedBox(height: 20,),
           Center(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
            children: [
-              Container(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-            child: Text('CONTACT ME', 
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-            decoration: BoxDecoration(
-              color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(5),
-          ),
-          ),
-          SizedBox(width: 20,),
-           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-            child: Text('SEE MY RESUME', 
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-            decoration: BoxDecoration(
-              color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(5),
+                Container(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              child: Text('CONTACT ME', 
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
+              decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(5),
           ),
           ),
            ],
          ),
+            ),
+            SizedBox(height: 20,),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                   Container(
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                child: Text('SEE MY RESUME', 
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Colors.white,),),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(5),
+          ),
+          ),
+                ],
+              ),
             ),
           
         ],

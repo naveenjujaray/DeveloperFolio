@@ -1,5 +1,4 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
-import 'package:DeveloperFolio/configure/centeredviewmob.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -18,13 +17,14 @@ class NavbarItem extends StatelessWidget {
   }
 }
 
+
 class NavigationBar extends StatelessWidget {
   const NavigationBar({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: CenteredViewMob(child: NavbarMob()),
-      tablet: CenteredViewMob(child: NavbarMob()),
+      tablet: CenteredViewTab(child: NavbarMob()),
       desktop: CenteredView(child: NavbarTbDt()),
     );
   }
@@ -36,39 +36,41 @@ class NavbarTbDt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
+    height: 50,
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        NavbarLogo(),
+        Container(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          NavbarLogo(),
-          Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                NavbarItem('Skills'),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Projects'),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Achievements'),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Blogs'),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Contact'),
-                SizedBox(
-                  width: 60,
-                ),
-              ],
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        NavbarItem('Skills'),
+        SizedBox(
+          width: 30,
+        ),
+        NavbarItem('Projects'),
+        SizedBox(
+          width: 30,
+        ),
+        NavbarItem('Achievements'),
+        SizedBox(
+          width: 30,
+        ),
+        NavbarItem('Blogs'),
+        SizedBox(
+          width: 30,
+        ),
+        NavbarItem('Contact'),
+        SizedBox(
+          width: 60,
+        ),
+      ],
             ),
-        ],
-      ),
-    );
+    ),
+      ],
+    ),
+        );
   }
 }
 

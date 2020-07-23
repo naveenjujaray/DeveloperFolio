@@ -1,10 +1,13 @@
 import 'package:DeveloperFolio/include/Rows/blogcardmain.dart';
+import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
 import 'package:DeveloperFolio/include/imagesmain/images.dart';
 import 'package:DeveloperFolio/include/skillspage/skills_desk.dart';
 import 'package:DeveloperFolio/include/Rows/progressbarmain.dart';
 import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
 import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
 import 'package:DeveloperFolio/pages/blogpage.dart';
+import 'package:DeveloperFolio/pages/contactpage.dart';
+import 'package:DeveloperFolio/pages/footer.dart';
 import 'package:DeveloperFolio/pages/progresspage.dart';
 import 'package:DeveloperFolio/pages/welcome.dart';
 import 'package:flutter/material.dart';
@@ -63,14 +66,30 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   Expanded(child: ThreeDesk()),
                 ],
               ),
+               SizedBox(
+                height: 75,
+              ),
               Row(
                 children: [
                   Expanded(child: BlogPage()),
                 ],
               ),
-               Row(
-                children: [],
+               SizedBox(
+                height: 75,
               ),
+               Row(
+                children: [
+                  Expanded(child: ContactPageDesk(),),
+                  Expanded(child: FourDesk(),),
+                ],
+              ),
+              SizedBox(height: 100,),
+              Row(
+                children: [
+                  Expanded(child: FooterPage()),
+                ],
+              ),
+              
             ],
           ),
         ),
@@ -92,6 +111,9 @@ class HomeMobile extends StatelessWidget {
           SkillsMob(),
           ProgressPage(),
           BlogPage(),
+          ContactPage(),
+          SizedBox(height: 50,),
+          FooterPage()
         ],
       ),
     );
@@ -111,6 +133,9 @@ class HomeTab extends StatelessWidget {
           SkillsTab(),
           ProgressPage(),
           BlogPage(),
+          ContactPage(),
+          SizedBox(height: 50,),
+          FooterMob(),
         ],
       ),
     );

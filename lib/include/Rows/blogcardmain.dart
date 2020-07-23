@@ -105,6 +105,7 @@ class BlogCardDesk extends StatelessWidget {
             ),
                 ),
             ),
+            SizedBox(width: 30,),
              ],
            ),
          ),

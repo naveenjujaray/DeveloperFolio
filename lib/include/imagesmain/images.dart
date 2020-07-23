@@ -99,3 +99,36 @@ class ThreeTab extends StatelessWidget {
     );
   }
 }
+
+class FourDesk extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 600,
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      child: Image.asset('assets/images/four.png')
+    );
+  }
+}
+
+class FourMob extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      height: 300,
+      width: 800,
+      alignment: Alignment.center,
+      child: Image.asset('assets/images/four.png')
+    );
+  }
+}
+
+class FourTab extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      width: 600,
+      child: Image.asset('assets/images/four.png')
+    );
+  }
+}

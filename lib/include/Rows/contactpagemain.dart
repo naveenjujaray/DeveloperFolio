@@ -1,27 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:js' as js;
-class WelcomePageDesk extends StatelessWidget {
-  const WelcomePageDesk({Key key}) : super(key: key);
+
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+class ContactPageDesk extends StatelessWidget {
+  const ContactPageDesk({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 600,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text("Hi ! I'm Naveen Jujaray", 
-          style: TextStyle(fontWeight: FontWeight.w800, height: 1.3, fontSize: 50),
+        children: [
+          Text("Contact Me", 
+          style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
           textAlign: TextAlign.center,
           ),
-          SizedBox(height: 30,),
-          Text("I help out Spider-man with his web slingers, or you could call me a web designer.", 
-          style: TextStyle(fontSize: 21,height: 1.7,),
-          textAlign: TextAlign.center,
-          ),
-          SizedBox(height: 40,),
+          SizedBox(height: 10,),
+          Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
+          style: TextStyle(color: Colors.grey, fontSize: 22),),
+          SizedBox(height: 10,),
           Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('☎️',
+          style: TextStyle(color: Colors.grey, fontSize: 28),),
+          SizedBox(width: 10,),
+          Text('+91 ***** *****',
+          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+            ],
+          ),
+          SizedBox(height: 10,),
+         Row(
+           children: [
+              Text('✉️',
+          style: TextStyle(color: Colors.grey, fontSize: 28),),
+          SizedBox(width: 10,),
+              Text('j***********n@gmail.com',
+          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+           ],
+         ),
+         SizedBox(height: 20,),
+        Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                                   child: Container( width: 60,height: 60,
@@ -115,68 +136,52 @@ class WelcomePageDesk extends StatelessWidget {
                 ),
               ],
             ),
-          SizedBox(height: 40,),
-         Row(
-               mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                  Expanded(
-                   child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                child: Text('CONTACT ME', 
-         style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-                decoration: BoxDecoration(
-         color: Colors.blueAccent,
-           borderRadius: BorderRadius.circular(5),
-              ),
-              ),
-                  ),
-              SizedBox(width: 50,),
-               Expanded(
-                  child: GestureDetector(
-                    onTap: (){js.context.callMethod("open", ["https://drive.google.com/file/d/1PZYWMJEQMLIh5g5mXnENQcOL1vlunq6_/view?usp=sharing"]);
-                    },
-                                      child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    child: Text('SEE MY RESUME', 
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-                    decoration: BoxDecoration(
-                      color: Colors.blueAccent,
-           borderRadius: BorderRadius.circular(5),
-              ),
-              ),
-                  ),
-               ),
-               ],
-             ),
-             
         ],
       ),
     );
   }
 }
 
-class WelcomePageTab extends StatelessWidget {
-  const WelcomePageTab({Key key}) : super(key: key);
+class ContactPageTab extends StatelessWidget {
+  const ContactPageTab({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 600,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          SizedBox(height: 40,),
-          Center(
-            child:  Text("Hi ! I'm Naveen Jujaray", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.3, fontSize: 50),
-            textAlign: TextAlign.justify,),
+ crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Contact Me", 
+          style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
+          
           ),
-          SizedBox(height: 30,),
-          Center(
-            child: Text("I help out Spider-man with his web slingers, or you could call me a web designer.", 
-            style: TextStyle(fontSize: 20,height: 1.7,),
-            textAlign: TextAlign.center,),
+          SizedBox(height: 10,),
+          Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
+          style: TextStyle(color: Colors.grey, fontSize: 22),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              Text('☎️',
+          style: TextStyle(color: Colors.grey, fontSize: 28),),
+          SizedBox(width: 10,),
+          Text('+91 ***** *****',
+          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
+          ),
+            ],
+          ),
+          SizedBox(height: 10,),
+         Row(
+           children: [
+              Text('✉️',
+          style: TextStyle(color: Colors.grey, fontSize: 28),),
+          SizedBox(width: 10,),
+              Text('j***********n@gmail.com',
+          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
+          ),
+           ],
+         ),
+         SizedBox(height: 20,),
           Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -272,60 +277,62 @@ class WelcomePageTab extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20,),
-          Row(
-             mainAxisAlignment: MainAxisAlignment.center,
-           children: [
-            Container(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-          child: Text('CONTACT ME', 
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-          decoration: BoxDecoration(
-            color: Colors.blueAccent,
-              borderRadius: BorderRadius.circular(5),
-          ),
-          ),
-          SizedBox(width: 20,),
-           Container(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: Text('SEE MY RESUME', 
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-          decoration: BoxDecoration(
-            color: Colors.blueAccent,
-              borderRadius: BorderRadius.circular(5),
-          ),
-          ),
-           ],
-         ),
-          
         ],
       ),
+      
     );
   }
 }
 
-class WelcomePageMob extends StatelessWidget {
-  const WelcomePageMob({Key key}) : super(key: key);
+class ContactPageMob extends StatelessWidget {
+  const ContactPageMob({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 600,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          SizedBox(height: 40,),
-          Center(
-            child:  Text("Hi ! I'm Naveen Jujaray", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.3, fontSize: 32),
-            textAlign: TextAlign.justify,),
+ crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Contact Me", 
+          style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 32),
+          
           ),
-          SizedBox(height: 30,),
-          Center(
-            child: Text("I help out Spider-man with his web slingers, or you could call me a web designer.", 
-            style: TextStyle(fontSize: 16,height: 1.7,),
-            textAlign: TextAlign.center,),
+          SizedBox(height: 10,),
+          Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
+          style: TextStyle(color: Colors.grey, fontSize: 18),),
+          SizedBox(height: 25,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text('☎️',
+          style: TextStyle(color: Colors.grey, fontSize: 22),
           ),
-          SizedBox(height: 20,),
+          SizedBox(width: 10,),
+          Text('+91 ***** *****',
+            style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
+            ),
+            ],
+          ),
+          SizedBox(height: 10,),
+         Row(
+           mainAxisAlignment: MainAxisAlignment.start,
+           children: [
+              Container(
+                child: Text('✉️',
+          style: TextStyle(color: Colors.grey, fontSize: 22),
+          ),
+              ),
+          SizedBox(width: 10,),
+              Expanded(
+                              child: Container(
+                                child: Text('j***********n@gmail.com',
+          style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
+          ),
+                              ),
+              ),
+           ],
+         ),
+         SizedBox(height: 20,),
           Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -405,41 +412,6 @@ class WelcomePageMob extends StatelessWidget {
                        },)),
             ],
             ),
-            SizedBox(height: 20,),
-          Center(
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-           children: [
-                Container(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-              child: Text('CONTACT ME', 
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-              decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                    borderRadius: BorderRadius.circular(5),
-          ),
-          ),
-           ],
-         ),
-            ),
-            SizedBox(height: 20,),
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                   Container(
-                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                child: Text('SEE MY RESUME', 
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Colors.white,),),
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                    borderRadius: BorderRadius.circular(5),
-          ),
-          ),
-                ],
-              ),
-            ),
-          
         ],
       ),
     );

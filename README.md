@@ -20,19 +20,11 @@ If you created something awesome and want to contribute then feel free to open P
 
 ✔️ Skills
 
-❌ Work Experience
-
-❌ Open Source Projects Connected with Github
-
-❌ Big Projects
-
 ✔️ Achievements 🏆
 
 ✔️ Blogs
 
 ✔️ Contact me
-
-❌ Github Profile
 
 To view a live example, [click here]
 
@@ -81,6 +73,7 @@ $ firebase deploy
 ## For the Future
 * Dark Mode
 * Connect with LinkedIn to get Summary, Skills, Education and Experience
+* Connect with Github to get Customized Pins, Profile Details
 * Personalization Page to edit everything in once place.
 
 

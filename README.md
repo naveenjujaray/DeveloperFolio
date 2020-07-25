@@ -26,7 +26,7 @@ If you created something awesome and want to contribute then feel free to open P
 
 ❌ Big Projects
 
-❌ Achievements And Certifications 🏆
+✔️ Achievements 🏆
 
 ✔️ Blogs
 

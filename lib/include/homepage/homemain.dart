@@ -1,4 +1,4 @@
-import 'package:DeveloperFolio/include/Rows/blogcardmain.dart';
+import 'package:DeveloperFolio/include/Rows/achievementsmain.dart';
 import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
 import 'package:DeveloperFolio/include/imagesmain/images.dart';
 import 'package:DeveloperFolio/include/skillspage/skills_desk.dart';
@@ -66,6 +66,14 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   Expanded(child: ThreeDesk()),
                 ],
               ),
+              SizedBox(
+                height: 75,
+              ),
+              Row(
+                children: [
+                  Expanded(child: AchieveDesk()),
+                ],
+              ),
                SizedBox(
                 height: 75,
               ),
@@ -110,6 +118,7 @@ class HomeMobile extends StatelessWidget {
           OneMob(),
           SkillsMob(),
           ProgressPage(),
+          AchieveMob(),
           BlogPage(),
           ContactPage(),
           SizedBox(height: 50,),
@@ -132,6 +141,7 @@ class HomeTab extends StatelessWidget {
           OneTab(),
           SkillsTab(),
           ProgressPage(),
+          AchieveTab(),
           BlogPage(),
           ContactPage(),
           SizedBox(height: 50,),

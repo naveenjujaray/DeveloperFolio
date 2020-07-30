@@ -8,22 +8,24 @@ class NavigationDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(color: Colors.black12, blurRadius: 16),
-        ],
-      ),
-      child: Column(
-        children: <Widget>[
-          DrawerItem('Skills', FontAwesomeIcons.tasks),
-          DrawerItem('Open Source', FontAwesomeIcons.folderOpen),
-          DrawerItem('Achievements',FontAwesomeIcons.trophy),
-          DrawerItem('Blogs',FontAwesomeIcons.bloggerB),
-          DrawerItem('Contact Me', FontAwesomeIcons.user),
-        ],
+    return Drawer(
+          child: Container(
+        width: 300,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(color: Colors.black12, blurRadius: 16),
+          ],
+        ),
+        child: Column(
+          children: <Widget>[
+            DrawerItem('Skills', FontAwesomeIcons.tasks),
+            DrawerItem('Open Source', FontAwesomeIcons.folderOpen),
+            DrawerItem('Achievements',FontAwesomeIcons.trophy),
+            DrawerItem('Blogs',FontAwesomeIcons.bloggerB),
+            DrawerItem('Contact Me', FontAwesomeIcons.user),
+          ],
+        ),
       ),
     );
   }

@@ -11,7 +11,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
           builder:(context, sizingInformation) => Scaffold(
-            drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? NavigationDrawer() : null,
+            endDrawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? NavigationDrawer() : null,
+            endDrawerEnableOpenDragGesture: false,
         backgroundColor: Colors.white,
         body: Column(
             children: <Widget>[

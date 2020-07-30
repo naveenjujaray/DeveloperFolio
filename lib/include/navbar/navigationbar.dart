@@ -11,12 +11,11 @@ class NavbarItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-    title,
-    style: TextStyle(fontSize: 18),
-      );
+      title,
+      style: TextStyle(fontSize: 18),
+    );
   }
 }
-
 
 class NavigationBar extends StatelessWidget {
   const NavigationBar({Key key}) : super(key: key);
@@ -30,50 +29,48 @@ class NavigationBar extends StatelessWidget {
   }
 }
 
-
 class NavbarTbDt extends StatelessWidget {
   const NavbarTbDt({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
-    height: 50,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
-        NavbarLogo(),
-        Container(
+      height: 50,
       child: Row(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        NavbarItem('Skills'),
-        SizedBox(
-          width: 30,
-        ),
-        NavbarItem('Projects'),
-        SizedBox(
-          width: 30,
-        ),
-        NavbarItem('Achievements'),
-        SizedBox(
-          width: 30,
-        ),
-        NavbarItem('Blogs'),
-        SizedBox(
-          width: 30,
-        ),
-        NavbarItem('Contact'),
-        SizedBox(
-          width: 60,
-        ),
-      ],
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          NavbarLogo(),
+          Container(
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                NavbarItem('Skills'),
+                SizedBox(
+                  width: 30,
+                ),
+                NavbarItem('Projects'),
+                SizedBox(
+                  width: 30,
+                ),
+                NavbarItem('Achievements'),
+                SizedBox(
+                  width: 30,
+                ),
+                NavbarItem('Blogs'),
+                SizedBox(
+                  width: 30,
+                ),
+                NavbarItem('Contact'),
+                SizedBox(
+                  width: 60,
+                ),
+              ],
             ),
-    ),
-      ],
-    ),
-        );
+          ),
+        ],
+      ),
+    );
   }
 }
-
 
 class NavbarMob extends StatelessWidget {
   const NavbarMob({Key key}) : super(key: key);
@@ -85,12 +82,16 @@ class NavbarMob extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-            NavbarLogo(),
-            IconButton(
+          NavbarLogo(),
+          IconButton(
             alignment: Alignment.topRight,
-            icon: Icon(FontAwesomeIcons.bars),
-            onPressed: (){},
+            icon: Icon(
+              FontAwesomeIcons.bars,
             ),
+            onPressed: () {
+              Scaffold.of(context).openEndDrawer();
+            },
+          ),
         ],
       ),
     );

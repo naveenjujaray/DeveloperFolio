@@ -2,7 +2,6 @@ import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/include/homepage/homemain.dart';
 import 'package:DeveloperFolio/include/navbar/drawer/drawernav.dart';
 import 'package:flutter/material.dart';
-import 'package:DeveloperFolio/include/navbar/navigationbar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,15 +11,14 @@ class HomePage extends StatelessWidget {
     return ResponsiveBuilder(
           builder:(context, sizingInformation) => Scaffold(
             endDrawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? NavigationDrawer() : null,
-            endDrawerEnableOpenDragGesture: false,
         backgroundColor: Colors.white,
         body: Column(
             children: <Widget>[
-              NavigationBar(),
+              
               Expanded(
                child: ScreenTypeLayout(
          mobile: CenteredViewMob(child: HomeMobile()),
-         desktop: CenteredView(child: HomeDesktop()),
+         desktop: CenteredViewDesk(child: HomeDesktop()),
          tablet: CenteredViewTab(child: HomeTab()),
                ),
         ),

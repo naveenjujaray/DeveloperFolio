@@ -35,6 +35,7 @@ dependencies:
   url_launcher: ^5.5.0
   url_launcher_web: ^0.1.2
   characters: ^1.0.0
+  get_it: ^4.0.2
 
 dev_dependencies:
   flutter_test:

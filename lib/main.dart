@@ -1,8 +1,12 @@
 import 'package:DeveloperFolio/pages/homepage.dart';
+import 'package:DeveloperFolio/pages/layoutpage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'configure/navigation_service.dart';
+
 void main() {
+   setupLocator();
   runApp(MyApp());
 }
 
@@ -19,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: LayoutTemplate(),
     );
   }
 }

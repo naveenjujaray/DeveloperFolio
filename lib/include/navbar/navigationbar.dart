@@ -1,4 +1,6 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
+import 'package:DeveloperFolio/configure/navigation_service.dart';
+import 'package:DeveloperFolio/configure/routing.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -7,12 +9,18 @@ import 'logo/navbarlogo.dart';
 
 class NavbarItem extends StatelessWidget {
   final String title;
-  const NavbarItem(this.title);
+  final String navigationPath;
+  const NavbarItem(this.title, this.navigationPath);
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: TextStyle(fontSize: 18),
+    return GestureDetector(
+      onTap: () {
+        locator<NavigationService>().navigateTo(navigationPath);
+      },
+          child: Text(
+        title,
+        style: TextStyle(fontSize: 18),
+      ),
     );
   }
 }
@@ -24,7 +32,7 @@ class NavigationBar extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: CenteredViewMob(child: NavbarMob()),
       tablet: CenteredViewTab(child: NavbarMob()),
-      desktop: CenteredView(child: NavbarTbDt()),
+      desktop: CenteredViewDesk(child: NavbarTbDt()),
     );
   }
 }
@@ -43,23 +51,27 @@ class NavbarTbDt extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                NavbarItem('Skills'),
+                 NavbarItem('Home', HomeRoute),
                 SizedBox(
                   width: 30,
                 ),
-                NavbarItem('Projects'),
+                NavbarItem('Skills', SkillsRoute),
                 SizedBox(
                   width: 30,
                 ),
-                NavbarItem('Achievements'),
+                NavbarItem('Projects', SkillsRoute),
                 SizedBox(
                   width: 30,
                 ),
-                NavbarItem('Blogs'),
+                NavbarItem('Achievements', AchievementsRoute),
                 SizedBox(
                   width: 30,
                 ),
-                NavbarItem('Contact'),
+                NavbarItem('Blogs', BlogRoute),
+                SizedBox(
+                  width: 30,
+                ),
+                NavbarItem('Contact', ContactRoute),
                 SizedBox(
                   width: 60,
                 ),
@@ -89,7 +101,8 @@ class NavbarMob extends StatelessWidget {
               FontAwesomeIcons.bars,
             ),
             onPressed: () {
-              Scaffold.of(context).openEndDrawer();
+                Scaffold.of(context).openEndDrawer();
+              
             },
           ),
         ],

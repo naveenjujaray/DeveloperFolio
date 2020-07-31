@@ -14,17 +14,18 @@ class HomePage extends StatelessWidget {
             endDrawerEnableOpenDragGesture: false,
         backgroundColor: Colors.white,
         body: Column(
-            children: <Widget>[
-              
+          
+              children: <Widget>[
+                
               Expanded(
-               child: ScreenTypeLayout(
-         mobile: CenteredViewMob(child: HomeMobile()),
-         desktop: CenteredViewDesk(child: HomeDesktop()),
-         tablet: CenteredViewTab(child: HomeTab()),
-               ),
-        ),
-            ],
+         child: ScreenTypeLayout(
+           mobile: CenteredViewMob(child: HomeMobile()),
+           desktop: CenteredViewDesk(child: HomeDesktop()),
+           tablet: CenteredViewTab(child: HomeTab()),
+         ),
           ),
+              ],
+            ),
       ),
     );
   }

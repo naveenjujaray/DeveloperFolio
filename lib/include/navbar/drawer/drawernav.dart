@@ -22,6 +22,7 @@ class NavigationDrawer extends StatelessWidget {
           children: <Widget>[
             DrawerItem('Home', FontAwesomeIcons.home, HomeRoute),
             DrawerItem('Skills', FontAwesomeIcons.tasks, SkillsRoute),
+            DrawerItem('Proficiency', FontAwesomeIcons.chartBar, ProficiencyRoute),
             DrawerItem('Open Source', FontAwesomeIcons.folderOpen, ProjectsRoute),
             DrawerItem('Achievements',FontAwesomeIcons.trophy, AchievementsRoute),
             DrawerItem('Blogs',FontAwesomeIcons.bloggerB, BlogRoute),

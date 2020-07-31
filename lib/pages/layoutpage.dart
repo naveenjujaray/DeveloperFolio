@@ -14,9 +14,8 @@ class LayoutTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-        endDrawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigationDrawer()
-            : null,
+        endDrawer: NavigationDrawer(),
+        endDrawerEnableOpenDragGesture: false,
         backgroundColor: Colors.white,
         body: Column(
           children: <Widget>[

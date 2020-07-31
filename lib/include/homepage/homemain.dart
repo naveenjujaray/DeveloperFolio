@@ -41,63 +41,73 @@ class _HomeDesktopState extends State<HomeDesktop> {
         controller: _controller,
         child: SingleChildScrollView(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Row(
-                children: <Widget>[
-                  Expanded(child: WelcomePage()),
-                  Expanded(child: OneDesk()),
-                ],
+              Flexible(
+                          child: ListView(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+
+                  children: [
+                    Row(
+                      children: <Widget>[
+                        Expanded(child: WelcomePage()),
+                        Expanded(child: OneDesk()),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 75,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Expanded(child: TwoDesk()),
+                        Expanded(child: SkillsLogoDesk()),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 75,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Expanded(child: SkillBarDesk()),
+                        Expanded(child: ThreeDesk()),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 75,
+                    ),
+                    Row(
+                      children: [
+                        Expanded(child: AchieveDesk()),
+                      ],
+                    ),
+                     SizedBox(
+                      height: 75,
+                    ),
+                    Row(
+                      children: [
+                        Expanded(child: BlogPage()),
+                      ],
+                    ),
+                     SizedBox(
+                      height: 75,
+                    ),
+                     Row(
+                      children: [
+                        Expanded(child: ContactPageDesk(),),
+                        Expanded(child: FourDesk(),),
+                      ],
+                    ),
+                    SizedBox(height: 100,),
+                    Row(
+                      children: [
+                        Expanded(child: FooterPage()),
+                      ],
+                    ),
+                    
+                  ],
+                ),
               ),
-              SizedBox(
-                height: 75,
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(child: TwoDesk()),
-                  Expanded(child: SkillsLogoDesk()),
-                ],
-              ),
-              SizedBox(
-                height: 75,
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(child: SkillBarDesk()),
-                  Expanded(child: ThreeDesk()),
-                ],
-              ),
-              SizedBox(
-                height: 75,
-              ),
-              Row(
-                children: [
-                  Expanded(child: AchieveDesk()),
-                ],
-              ),
-               SizedBox(
-                height: 75,
-              ),
-              Row(
-                children: [
-                  Expanded(child: BlogPage()),
-                ],
-              ),
-               SizedBox(
-                height: 75,
-              ),
-               Row(
-                children: [
-                  Expanded(child: ContactPageDesk(),),
-                  Expanded(child: FourDesk(),),
-                ],
-              ),
-              SizedBox(height: 100,),
-              Row(
-                children: [
-                  Expanded(child: FooterPage()),
-                ],
-              ),
-              
             ],
           ),
         ),
@@ -111,18 +121,26 @@ class HomeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        mainAxisSize: MainAxisSize.max,
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          WelcomePageMob(),
-          OneMob(),
-          SkillsMob(),
-          ProgressPage(),
-          AchieveMob(),
-          BlogPage(),
-          ContactPage(),
-          SizedBox(height: 50,),
-          FooterPage()
+        children: [
+          Flexible(
+                  child: ListView(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              children: <Widget>[
+                WelcomePageMob(),
+                OneMob(),
+                SkillsMob(),
+                ProgressPage(),
+                AchieveMob(),
+                BlogPage(),
+                ContactPage(),
+                SizedBox(height: 50,),
+                FooterPage()
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -134,18 +152,26 @@ class HomeTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        mainAxisSize: MainAxisSize.max,
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          WelcomePageTab(),
-          OneTab(),
-          SkillsTab(),
-          ProgressPage(),
-          AchieveTab(),
-          BlogPage(),
-          ContactPage(),
-          SizedBox(height: 50,),
-          FooterMob(),
+        children: [
+          Flexible(
+                  child: ListView(   
+                    shrinkWrap: true,     
+                    physics: NeverScrollableScrollPhysics(),
+              children: <Widget>[
+                WelcomePageTab(),
+                OneTab(),
+                SkillsTab(),
+                ProgressPage(),
+                AchieveTab(),
+                BlogPage(),
+                ContactPage(),
+                SizedBox(height: 50,),
+                FooterMob(),
+              ],
+            ),
+          ),
         ],
       ),
     );

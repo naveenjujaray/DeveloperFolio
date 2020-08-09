@@ -43,54 +43,54 @@ class NavbarTbDt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          NavbarLogo(),
-          Container(
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[          
-                 NavbarItem('Home', HomeRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Skills', SkillsRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Proficiency', ProficiencyRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Achievements', AchievementsRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Blogs', BlogRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Contact', ContactRoute),
-                 SizedBox(
-                  width: 30,
-                ),
-                IconButton(
-                        onPressed: () {
-                          AdaptiveTheme.of(context).toggleThemeMode();
-                        },
-                        icon: Icon(Icons.brightness_3, size: 25),
-                      ),
-                SizedBox(
-                  width: 60,
-                ),
-              ],
+        height: 50,
+        child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: <Widget>[
+      NavbarLogo(),
+      SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+              child: Container(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[          
+                   NavbarItem('Home', HomeRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Skills', SkillsRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Proficiency', ProficiencyRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Achievements', AchievementsRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Blogs', BlogRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Contact', ContactRoute),
+                   SizedBox(
+                    width: 30,
+                  ),
+                  IconButton(
+              onPressed: () {
+                AdaptiveTheme.of(context).toggleThemeMode();
+              },
+              icon: Icon(Icons.brightness_3, size: 25),
             ),
-          ),
-        ],
+                ],
+              ),
+            ),
       ),
-    );
+    ],
+        ),
+      );
   }
 }
 

@@ -66,7 +66,7 @@ class WelcomePageDesk extends StatelessWidget {
                 Expanded(
                                   child: Container( width: 60,height: 60,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.github, color: Colors.black, size: 40,), 
+                      icon: Icon(FontAwesomeIcons.github, size: 40,), 
                       onPressed: ()
                       {
                        js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
@@ -86,7 +86,7 @@ class WelcomePageDesk extends StatelessWidget {
                 Expanded(
                                   child: Container( width: 60,height: 60,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.medium, color: Colors.black, size: 40,), 
+                      icon: Icon(FontAwesomeIcons.medium, size: 40,), 
                       onPressed: ()
                       {
                        js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
@@ -96,7 +96,7 @@ class WelcomePageDesk extends StatelessWidget {
                 Expanded(
                                   child: Container( width: 60,height: 60,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.dev, color: Colors.black,size: 40,), 
+                      icon: Icon(FontAwesomeIcons.dev,size: 40,), 
                       onPressed: ()
                       {
                        js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
@@ -224,7 +224,7 @@ class WelcomePageTab extends StatelessWidget {
                   Expanded(
                                     child: Container( width: 60,height: 60,
                       child: IconButton(
-                        icon: Icon(FontAwesomeIcons.github, color: Colors.black, size: 40,), 
+                        icon: Icon(FontAwesomeIcons.github, size: 40,), 
                         onPressed:()
                         {
                          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
@@ -244,7 +244,7 @@ class WelcomePageTab extends StatelessWidget {
                   Expanded(
                                     child: Container( width: 60,height: 60,
                       child: IconButton(
-                        icon: Icon(FontAwesomeIcons.medium, color: Colors.black, size: 40,), 
+                        icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
                         onPressed: ()
                         {
                          js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
@@ -254,7 +254,7 @@ class WelcomePageTab extends StatelessWidget {
                   Expanded(
                                     child: Container( width: 60,height: 60,
                       child: IconButton(
-                        icon: Icon(FontAwesomeIcons.dev, color: Colors.black,size: 40,), 
+                        icon: Icon(FontAwesomeIcons.dev, size: 40,), 
                         onPressed: ()
                         {
                          js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
@@ -366,7 +366,7 @@ class WelcomePageMob extends StatelessWidget {
                          )),
                   Container( width: 55,height: 55,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.github, color: Colors.black, size: 40,), onPressed: ()
+                      icon: Icon(FontAwesomeIcons.github,  size: 40,), onPressed: ()
                         {
                          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
                          },
@@ -385,7 +385,7 @@ class WelcomePageMob extends StatelessWidget {
                          )),
                   Container( width: 55,height: 55,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.medium, color: Colors.black, size: 40,), 
+                      icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
                       onPressed: ()
                         {
                          js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
@@ -393,7 +393,7 @@ class WelcomePageMob extends StatelessWidget {
                          )),
                   Container( width: 55,height: 55,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.dev, color: Colors.black,size: 40,), 
+                      icon: Icon(FontAwesomeIcons.dev, size: 40,), 
                       onPressed: ()
                         {
                          js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);

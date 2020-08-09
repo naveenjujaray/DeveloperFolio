@@ -75,6 +75,9 @@ class NavbarTbDt extends StatelessWidget {
                     width: 30,
                   ),
                   NavbarItem('Contact', ContactRoute),
+                  SizedBox(
+                    width: 10,
+                  ),
                   IconButton(
               onPressed: () {
                 AdaptiveTheme.of(context).toggleThemeMode();

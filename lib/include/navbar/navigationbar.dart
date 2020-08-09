@@ -1,6 +1,7 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
 import 'package:DeveloperFolio/configure/routing.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -42,45 +43,54 @@ class NavbarTbDt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          NavbarLogo(),
-          Container(
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                 NavbarItem('Home', HomeRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Skills', SkillsRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Proficiency', ProficiencyRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Achievements', AchievementsRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Blogs', BlogRoute),
-                SizedBox(
-                  width: 30,
-                ),
-                NavbarItem('Contact', ContactRoute),
-                SizedBox(
-                  width: 60,
-                ),
-              ],
+        height: 50,
+        child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: <Widget>[
+      NavbarLogo(),
+      SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+              child: Container(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[          
+                   NavbarItem('Home', HomeRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Skills', SkillsRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Proficiency', ProficiencyRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Achievements', AchievementsRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Blogs', BlogRoute),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  NavbarItem('Contact', ContactRoute),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  IconButton(
+              onPressed: () {
+                AdaptiveTheme.of(context).toggleThemeMode();
+              },
+              icon: Icon(Icons.brightness_3, size: 25),
             ),
-          ),
-        ],
+                ],
+              ),
+            ),
       ),
-    );
+    ],
+        ),
+      );
   }
 }
 
@@ -92,9 +102,19 @@ class NavbarMob extends StatelessWidget {
       height: 40,
       child: Row(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           NavbarLogo(),
+          Expanded(child: Container(
+            width: 100,
+          )),
+             IconButton(
+                alignment: Alignment.topRight,
+                      onPressed: () {
+                        AdaptiveTheme.of(context).toggleThemeMode();
+                      },
+                      icon: Icon(Icons.brightness_3, size: 25),
+                    ),
           IconButton(
             alignment: Alignment.topRight,
             icon: Icon(

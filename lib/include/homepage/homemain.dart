@@ -49,6 +49,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   shrinkWrap: true,
 
                   children: [
+                     
                     Row(
                       children: <Widget>[
                         Expanded(child: WelcomePage()),

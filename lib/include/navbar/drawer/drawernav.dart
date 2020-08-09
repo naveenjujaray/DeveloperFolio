@@ -1,4 +1,5 @@
 import 'package:DeveloperFolio/configure/routing.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../navigationbar.dart';
@@ -12,12 +13,7 @@ class NavigationDrawer extends StatelessWidget {
     return Drawer(
           child: Container(
         width: 300,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(color: Colors.black12, blurRadius: 16),
-          ],
-        ),
+       
         child: Column(
           children: <Widget>[
             DrawerItem('Home', FontAwesomeIcons.home, HomeRoute),

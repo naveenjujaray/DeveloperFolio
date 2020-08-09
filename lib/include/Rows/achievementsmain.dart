@@ -29,7 +29,7 @@ class AchieveDesk extends StatelessWidget {
                      padding: new EdgeInsets.fromLTRB(20,20,20,20),
                     decoration: new BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
                 boxShadow: [new BoxShadow(
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 10.0,
@@ -61,7 +61,7 @@ class AchieveDesk extends StatelessWidget {
                      padding: new EdgeInsets.fromLTRB(20,20,20,20),
                     decoration: new BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
                 boxShadow: [new BoxShadow(
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 10.0,
@@ -123,7 +123,7 @@ class AchieveTab extends StatelessWidget {
                          padding: new EdgeInsets.fromLTRB(20,20,20,20),
                         decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.5),
                     boxShadow: [new BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 10.0,
@@ -155,7 +155,7 @@ class AchieveTab extends StatelessWidget {
                          padding: new EdgeInsets.fromLTRB(20,20,20,20),
                         decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.5),
                     boxShadow: [new BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 10.0,
@@ -220,7 +220,7 @@ class AchieveMob extends StatelessWidget {
                          padding: new EdgeInsets.fromLTRB(20,20,20,20),
                         decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.5),
                     boxShadow: [new BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 10.0,
@@ -252,7 +252,7 @@ class AchieveMob extends StatelessWidget {
                          padding: new EdgeInsets.fromLTRB(20,20,20,20),
                         decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.5),
                     boxShadow: [new BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 10.0,

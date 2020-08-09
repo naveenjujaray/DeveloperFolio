@@ -51,16 +51,7 @@ class NavbarTbDt extends StatelessWidget {
           Container(
             child: Row(
               mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                RaisedButton(
-              onPressed: () {
-                AdaptiveTheme.of(context).toggleThemeMode();
-              },
-              child: Text('Toggle Theme Mode'),
-            ),
-            SizedBox(
-                  width: 30,
-                ),
+              children: <Widget>[          
                  NavbarItem('Home', HomeRoute),
                 SizedBox(
                   width: 30,
@@ -82,6 +73,15 @@ class NavbarTbDt extends StatelessWidget {
                   width: 30,
                 ),
                 NavbarItem('Contact', ContactRoute),
+                 SizedBox(
+                  width: 30,
+                ),
+                IconButton(
+                        onPressed: () {
+                          AdaptiveTheme.of(context).toggleThemeMode();
+                        },
+                        icon: Icon(Icons.brightness_3, size: 25),
+                      ),
                 SizedBox(
                   width: 60,
                 ),
@@ -102,9 +102,19 @@ class NavbarMob extends StatelessWidget {
       height: 40,
       child: Row(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           NavbarLogo(),
+          Expanded(child: Container(
+            width: 100,
+          )),
+             IconButton(
+                alignment: Alignment.topRight,
+                      onPressed: () {
+                        AdaptiveTheme.of(context).toggleThemeMode();
+                      },
+                      icon: Icon(Icons.brightness_3, size: 25),
+                    ),
           IconButton(
             alignment: Alignment.topRight,
             icon: Icon(

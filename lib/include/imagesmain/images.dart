@@ -5,10 +5,10 @@ class OneDesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 700,
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-      child: Image.asset('assets/images/one.png')
-    );
+        width: 700,
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+        child: Image.asset('assets/images/one.png')
+      );
   }
 }
 

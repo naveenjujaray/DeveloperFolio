@@ -16,7 +16,7 @@ class LayoutTemplate extends StatelessWidget {
       builder: (context, sizingInformation) => Scaffold(
         endDrawer: NavigationDrawer(),
         endDrawerEnableOpenDragGesture: false,
-        backgroundColor: Colors.white,
+        
         body: Column(
           children: <Widget>[
             NavigationBar(),

@@ -32,7 +32,7 @@ class BlogCardDesk extends StatelessWidget {
                   padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                   decoration: new BoxDecoration(
               borderRadius: BorderRadius.circular(5),
-              color: Colors.white,
+              color: Colors.white.withOpacity(0.5),
               boxShadow: [new BoxShadow(
                   color: Colors.black.withOpacity(0.1),
                   blurRadius: 10.0,
@@ -66,7 +66,7 @@ class BlogCardDesk extends StatelessWidget {
                 padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                 decoration: new BoxDecoration(
               borderRadius: BorderRadius.circular(5),
-              color: Colors.white,
+              color: Colors.white.withOpacity(0.5),
               boxShadow: [new BoxShadow(
                 color: Colors.black.withOpacity(0.1),
                 blurRadius: 10.0,
@@ -100,7 +100,7 @@ class BlogCardDesk extends StatelessWidget {
                   padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                   decoration: new BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
                 boxShadow: [new BoxShadow(
                   color: Colors.black.withOpacity(0.1),
                   blurRadius: 10.0,
@@ -164,7 +164,7 @@ class BlogCardTab extends StatelessWidget {
                   padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                   decoration: new BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
                 boxShadow: [new BoxShadow(
                   color: Colors.black.withOpacity(0.1),
                   blurRadius: 20.0,
@@ -193,7 +193,7 @@ class BlogCardTab extends StatelessWidget {
                   padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                   decoration: new BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
+                color: Colors.white.withOpacity(0.5),
                 boxShadow: [new BoxShadow(
                   color: Colors.black.withOpacity(0.1),
                   blurRadius: 20.0,
@@ -222,7 +222,7 @@ class BlogCardTab extends StatelessWidget {
                         padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                         decoration: new BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.5),
                     boxShadow: [new BoxShadow(
                         color: Colors.black.withOpacity(0.1),
                         blurRadius: 20.0,
@@ -281,7 +281,7 @@ class BlogCardMob extends StatelessWidget {
                     padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                     decoration: new BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Colors.white,
+                  color: Colors.white.withOpacity(0.5),
                   boxShadow: [new BoxShadow(
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 20.0,
@@ -312,7 +312,7 @@ class BlogCardMob extends StatelessWidget {
                     padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                     decoration: new BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Colors.white,
+                  color: Colors.white.withOpacity(0.5),
                   boxShadow: [new BoxShadow(
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 20.0,
@@ -343,7 +343,7 @@ class BlogCardMob extends StatelessWidget {
                             padding: new EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                             decoration: new BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
-                        color: Colors.white,
+                        color: Colors.white.withOpacity(0.5),
                         boxShadow: [new BoxShadow(
                             color: Colors.black.withOpacity(0.1),
                             blurRadius: 20.0,

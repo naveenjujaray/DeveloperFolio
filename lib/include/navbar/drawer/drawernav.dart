@@ -12,12 +12,7 @@ class NavigationDrawer extends StatelessWidget {
     return Drawer(
           child: Container(
         width: 300,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(color: Colors.black12, blurRadius: 16),
-          ],
-        ),
+       
         child: Column(
           children: <Widget>[
             DrawerItem('Home', FontAwesomeIcons.home, HomeRoute),

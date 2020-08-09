@@ -1,6 +1,7 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
 import 'package:DeveloperFolio/configure/routing.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -51,6 +52,15 @@ class NavbarTbDt extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
+                RaisedButton(
+              onPressed: () {
+                AdaptiveTheme.of(context).toggleThemeMode();
+              },
+              child: Text('Toggle Theme Mode'),
+            ),
+            SizedBox(
+                  width: 30,
+                ),
                  NavbarItem('Home', HomeRoute),
                 SizedBox(
                   width: 30,

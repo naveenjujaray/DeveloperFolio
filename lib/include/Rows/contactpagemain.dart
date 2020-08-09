@@ -229,7 +229,11 @@ class ContactPageTab extends StatelessWidget {
                   Expanded(
                                     child: Container( width: 60,height: 60,
                       child: IconButton(
+<<<<<<< HEAD
                         icon: Icon(FontAwesomeIcons.github,  size: 40,), 
+=======
+                        icon: Icon(FontAwesomeIcons.github, size: 40,), 
+>>>>>>> 1b1402745a041a80d715c3c1b0e672cc3563d112
                         onPressed:()
                         {
                          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
@@ -373,7 +377,11 @@ class ContactPageMob extends StatelessWidget {
                          )),
                   Container( width: 55,height: 55,
                     child: IconButton(
+<<<<<<< HEAD
                       icon: Icon(FontAwesomeIcons.github,  size: 40,), onPressed: ()
+=======
+                      icon: Icon(FontAwesomeIcons.github, size: 40,), onPressed: ()
+>>>>>>> 1b1402745a041a80d715c3c1b0e672cc3563d112
                         {
                          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
                          },

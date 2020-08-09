@@ -1,6 +1,6 @@
 # DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Stars](https://img.shields.io/github/stars/naveenjujaray/DeveloperFolio?style=flat) ![Forks](https://img.shields.io/github/forks/naveenjujaray/DeveloperFolio?style=flat)
 
-A clean, beautiful and responsive portfolio template for Developers!
+A clean, beautiful and responsive portfolio template with `Dark Mode` enabled for Developers!
 
 `Still in development stage.` 
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an pull request.
@@ -73,7 +73,6 @@ $ firebase deploy
 ```
 
 ## For the Future
-* Dark Mode
 * Connect with LinkedIn to get Summary, Skills, Education and Experience
 * Connect with Github to get Customized Pins, Profile Details
 * Personalization Page to edit everything in once place.

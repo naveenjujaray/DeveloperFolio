@@ -5,6 +5,9 @@ A clean, beautiful and responsive portfolio template with `Dark Mode` enabled fo
 `Still in development stage.` 
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an pull request.
 
+### Dark Mode
+![Darkmode](gif/dark.gif)
+
 ### Desktop View
 ![Desktop](/gif/desk.gif)
 

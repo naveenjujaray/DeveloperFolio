@@ -20,6 +20,10 @@ class LayoutTemplate extends StatelessWidget {
         body: Column(
           children: <Widget>[
             NavigationBar(),
+
+
+
+
             Expanded(
               child: Navigator(
                 key: locator<NavigationService>().navigatorKey,

@@ -282,25 +282,32 @@ class WelcomePageTab extends StatelessWidget {
             Row(
                mainAxisAlignment: MainAxisAlignment.center,
              children: [
-              Container(
+              GestureDetector(
+                 onTap: () => locator<NavigationService>().navigateTo(ContactRoute),
+                              child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             child: Text('CONTACT ME', 
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
             decoration: BoxDecoration(
-              color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(5),
+                color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(5),
             ),
             ),
+              ),
             SizedBox(width: 20,),
-             Container(
+             GestureDetector(
+                 onTap: (){js.context.callMethod("open", ["https://drive.google.com/file/d/1PZYWMJEQMLIh5g5mXnENQcOL1vlunq6_/view?usp=sharing"]);
+                    },
+                            child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: Text('SEE MY RESUME', 
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
             decoration: BoxDecoration(
-              color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(5),
+                color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(5),
             ),
             ),
+             ),
              ],
            ),
             
@@ -418,15 +425,18 @@ class WelcomePageMob extends StatelessWidget {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
              children: [
-                  Container(
+                  GestureDetector(
+                     onTap: () => locator<NavigationService>().navigateTo(ContactRoute),
+                                      child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 child: Text('CONTACT ME', 
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
                 decoration: BoxDecoration(
-                    color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.blueAccent,
+                        borderRadius: BorderRadius.circular(5),
             ),
             ),
+                  ),
              ],
            ),
               ),
@@ -435,15 +445,19 @@ class WelcomePageMob extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                     Container(
+                     GestureDetector(
+                         onTap: (){js.context.callMethod("open", ["https://drive.google.com/file/d/1PZYWMJEQMLIh5g5mXnENQcOL1vlunq6_/view?usp=sharing"]);
+                    },
+                                            child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                   child: Text('SEE MY RESUME', 
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Colors.white,),),
                   decoration: BoxDecoration(
                     color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(5),
             ),
             ),
+                     ),
                   ],
                 ),
               ),

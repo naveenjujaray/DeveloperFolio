@@ -1,4 +1,4 @@
-# DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Stars](https://img.shields.io/github/stars/naveenjujaray/DeveloperFolio?style=flat) ![Forks](https://img.shields.io/github/forks/naveenjujaray/DeveloperFolio?style=flat) ![website](https://img.shields.io/website?url=https%3A%2F%2Fdeveloperfolio.web.app%2F)
+# DeveloperFolio  ![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) ![![Stars](https://img.shields.io/github/stars/naveenjujaray/DeveloperFolio?style=flat)](https://github.com/naveenjujaray/DeveloperFolio/stargazers) ![Forks](https://img.shields.io/github/forks/naveenjujaray/DeveloperFolio?style=flat) ![website](https://img.shields.io/website?url=https%3A%2F%2Fdeveloperfolio.web.app%2F)
 
 A clean, beautiful and responsive portfolio template with `Dark Mode` enabled for Developers!
 

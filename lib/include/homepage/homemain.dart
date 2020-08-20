@@ -1,7 +1,10 @@
-import 'package:DeveloperFolio/include/Rows/achievementsmain.dart';
+import 'package:DeveloperFolio/configure/centeredview.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/Achievement.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/Blogcenter.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/ContactCenter.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/skills_desk.dart';
 import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
 import 'package:DeveloperFolio/include/imagesmain/images.dart';
-import 'package:DeveloperFolio/include/skillspage/skills_desk.dart';
 import 'package:DeveloperFolio/include/Rows/progressbarmain.dart';
 import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
 import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
@@ -79,7 +82,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: AchieveDesk()),
+                        Expanded(child: AchievementDesk()),
                       ],
                     ),
                      SizedBox(
@@ -87,7 +90,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: BlogPage()),
+                        Expanded(child: BlogCenterDesk()),
                       ],
                     ),
                      SizedBox(
@@ -95,7 +98,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                      Row(
                       children: [
-                        Expanded(child: ContactPageDesk(),),
+                        Expanded(child: ContactCenterDesk()),
                         Expanded(child: FourDesk(),),
                       ],
                     ),
@@ -134,9 +137,9 @@ class HomeMobile extends StatelessWidget {
                 OneMob(),
                 SkillsMob(),
                 ProgressPage(),
-                AchieveMob(),
-                BlogPage(),
-                ContactPage(),
+                AchievementMob(),
+                BlogCenterMob(),
+                ContactCenterMob(),
                 SizedBox(height: 50,),
                 FooterPage()
               ],
@@ -165,9 +168,9 @@ class HomeTab extends StatelessWidget {
                 OneTab(),
                 SkillsTab(),
                 ProgressPage(),
-                AchieveTab(),
-                BlogPage(),
-                ContactPage(),
+                AchievementTab(),
+                BlogCenterTab(),
+                ContactCenterTab(),
                 SizedBox(height: 50,),
                 FooterMob(),
               ],

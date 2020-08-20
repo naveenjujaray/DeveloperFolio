@@ -1,3 +1,5 @@
+import 'package:DeveloperFolio/configure/navigation_service.dart';
+import 'package:DeveloperFolio/configure/routing.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:js' as js;
@@ -120,7 +122,9 @@ class WelcomePageDesk extends StatelessWidget {
                mainAxisAlignment: MainAxisAlignment.center,
                children: [
                   Expanded(
-                   child: Container(
+                   child: GestureDetector(
+                     onTap: () => locator<NavigationService>().navigateTo(ContactRoute),
+                                        child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 child: Text('CONTACT ME', 
          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
@@ -129,6 +133,7 @@ class WelcomePageDesk extends StatelessWidget {
            borderRadius: BorderRadius.circular(5),
               ),
               ),
+                   ),
                   ),
               SizedBox(width: 50,),
                Expanded(

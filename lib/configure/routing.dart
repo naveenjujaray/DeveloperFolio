@@ -1,4 +1,6 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/ContactCenter.dart';
+import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
 import 'package:DeveloperFolio/pages/achievementspage.dart';
 import 'package:DeveloperFolio/pages/blogpage.dart';
 import 'package:DeveloperFolio/pages/contactpage.dart';
@@ -51,7 +53,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case ContactRoute:
       return _getPageRoute(
         ScreenTypeLayout(
-          desktop: ContactPage(),
+          desktop: CenteredViewDesk(child: ContactPageDesk()),
           tablet: CenteredViewTab(child: ContactPage()),
           mobile: CenteredViewMob(child: ContactPage()),
         ), settings.name);

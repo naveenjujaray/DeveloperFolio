@@ -1,4 +1,4 @@
-import 'package:DeveloperFolio/include/skillspage/proficiency.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/proficiency.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

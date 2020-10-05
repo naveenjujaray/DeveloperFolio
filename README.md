@@ -25,6 +25,8 @@ If you created something awesome and want to contribute then feel free to open P
 
 ✔️ Proficiency
 
+✔️ Education
+
 ✔️ Achievements 🏆
 
 ✔️ Blogs

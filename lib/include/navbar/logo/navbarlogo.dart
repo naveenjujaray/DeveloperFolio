@@ -1,3 +1,5 @@
+import 'package:DeveloperFolio/configure/routing.dart';
+import 'package:DeveloperFolio/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -40,13 +42,13 @@ class NavbarLogoDesk extends StatelessWidget {
       height: 80,
       width: 500,
       child: Row(
-        children: [
-          Text('<', style: TextStyle(fontSize: 30),),
-          Text('Naveen Jujaray', style: TextStyle(color: Colors.blueAccent,fontSize: 30, fontFamily: 'Agustina'),),
-          Text('/', style: TextStyle(color: Colors.grey,fontSize: 40),),
-          Text('>', style: TextStyle(fontSize: 30),)
-        ],
-      )
+          children: [
+            Text('<', style: TextStyle(fontSize: 30),),
+            Text('Naveen Jujaray', style: TextStyle(color: Colors.blueAccent,fontSize: 30, fontFamily: 'Agustina'),),
+            Text('/', style: TextStyle(color: Colors.grey,fontSize: 40),),
+            Text('>', style: TextStyle(fontSize: 30),)
+          ],
+        )
       //Image.asset('assets/images/logo.png'),
     );
   }

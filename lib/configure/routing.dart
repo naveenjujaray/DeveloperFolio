@@ -1,5 +1,6 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/ContactCenter.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/Education.dart';
 import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
 import 'package:DeveloperFolio/pages/achievementspage.dart';
 import 'package:DeveloperFolio/pages/blogpage.dart';
@@ -13,7 +14,7 @@ import 'package:responsive_builder/responsive_builder.dart';
   
 const String SkillsRoute = 'skills';
 const String ProjectsRoute = 'projects';
-const String ProficiencyRoute = 'proficiency';
+const String EducationRoute = 'education';
 const String AchievementsRoute = 'achievements';
 const String ContactRoute = 'contact';
 const String BlogRoute = 'blogs';
@@ -36,12 +37,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       tablet: CenteredViewTab(child: BlogPage(),),
       mobile: CenteredViewMob(child: BlogPage(),),
       ), settings.name);
-    case ProficiencyRoute:
+    case EducationRoute:
       return _getPageRoute(
         ScreenTypeLayout(
-      desktop: CenteredViewDesk(child: ProgressPage(),),
-      tablet: CenteredViewTab(child: ProgressPage(),),
-      mobile: CenteredViewMob(child: ProgressPage(),),
+      desktop: CenteredViewDesk(child: EducationDesk(),),
+      tablet: CenteredViewTab(child: EducationTab(),),
+      mobile: CenteredViewMob(child: EducationMob(),),
       ), settings.name);
     case AchievementsRoute:
       return _getPageRoute(

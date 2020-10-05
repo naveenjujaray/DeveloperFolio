@@ -2,22 +2,22 @@ import 'package:DeveloperFolio/include/Rows/achievementsmain.dart';
 import 'package:DeveloperFolio/include/Rows/educationmain.dart';
 import 'package:flutter/material.dart';
 
-class AchievementDesk extends StatelessWidget {
-  const AchievementDesk({Key key}) : super(key: key);
+class EducationDesk extends StatelessWidget {
+  const EducationDesk({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
           child: Row(
          children: <Widget>[
-            Expanded(child: AchieveDesk()),
+            Expanded(child: EduDesk()),
                   ],
       ),
     );
   }
 }
 
-class AchievementMob extends StatelessWidget {
-  const AchievementMob({Key key}) : super(key: key);
+class EducationMob extends StatelessWidget {
+  const EducationMob({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
    return SingleChildScrollView(
@@ -25,7 +25,7 @@ class AchievementMob extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          AchieveMob()
+          EduMob(),
           
         ],      
       ),
@@ -33,8 +33,8 @@ class AchievementMob extends StatelessWidget {
   }
 }
 
-class AchievementTab extends StatelessWidget {
-  const AchievementTab({Key key}) : super(key: key);
+class EducationTab extends StatelessWidget {
+  const EducationTab({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
    return SingleChildScrollView(
@@ -42,7 +42,7 @@ class AchievementTab extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          AchieveTab(),
+          EduTab(),
         ],      
       ),
     );

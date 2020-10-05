@@ -2,14 +2,17 @@ import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/Achievement.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/Blogcenter.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/ContactCenter.dart';
+import 'package:DeveloperFolio/include/CenteringOfPages/Education.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/skills_desk.dart';
 import 'package:DeveloperFolio/include/Rows/contactpagemain.dart';
+import 'package:DeveloperFolio/include/Rows/educationmain.dart';
 import 'package:DeveloperFolio/include/imagesmain/images.dart';
 import 'package:DeveloperFolio/include/Rows/progressbarmain.dart';
 import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
 import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
 import 'package:DeveloperFolio/pages/blogpage.dart';
 import 'package:DeveloperFolio/pages/contactpage.dart';
+import 'package:DeveloperFolio/pages/educationpage.dart';
 import 'package:DeveloperFolio/pages/footer.dart';
 import 'package:DeveloperFolio/pages/progresspage.dart';
 import 'package:DeveloperFolio/pages/welcome.dart';
@@ -82,6 +85,14 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                     Row(
                       children: [
+                        Expanded(child: EducationDesk()),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 75,
+                    ),
+                    Row(
+                      children: [
                         Expanded(child: AchievementDesk()),
                       ],
                     ),
@@ -137,6 +148,7 @@ class HomeMobile extends StatelessWidget {
                 OneMob(),
                 SkillsMob(),
                 ProgressPage(),
+                EducationMob(),
                 AchievementMob(),
                 BlogCenterMob(),
                 ContactCenterMob(),
@@ -168,6 +180,7 @@ class HomeTab extends StatelessWidget {
                 OneTab(),
                 SkillsTab(),
                 ProgressPage(),
+                EducationTab(),
                 AchievementTab(),
                 BlogCenterTab(),
                 ContactCenterTab(),

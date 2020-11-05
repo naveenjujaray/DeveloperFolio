@@ -1,6 +1,9 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
 import 'package:DeveloperFolio/configure/routing.dart';
+import 'dart:js' as js;
+import 'dart:html' as html;
+
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -47,7 +50,9 @@ class NavbarTbDt extends StatelessWidget {
         child: Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
-      NavbarLogo(),
+      GestureDetector(
+       onTap: (){html.window.location.reload();},
+        child: NavbarLogo()),
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
               child: Container(
@@ -62,7 +67,7 @@ class NavbarTbDt extends StatelessWidget {
                   SizedBox(
                     width: 30,
                   ),
-                  NavbarItem('Proficiency', ProficiencyRoute),
+                  NavbarItem('Education', EducationRoute),
                   SizedBox(
                     width: 30,
                   ),
@@ -104,7 +109,9 @@ class NavbarMob extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          NavbarLogo(),
+          GestureDetector(
+            onTap: (){html.window.location.reload();},
+            child: NavbarLogo()),
           Expanded(child: Container(
             width: 100,
           )),

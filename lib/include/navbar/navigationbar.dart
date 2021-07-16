@@ -87,6 +87,7 @@ class NavbarTbDt extends StatelessWidget {
               onPressed: () {
                 AdaptiveTheme.of(context).toggleThemeMode();
               },
+              
               icon: Icon(Icons.brightness_3, size: 25),
             ),
                 ],
